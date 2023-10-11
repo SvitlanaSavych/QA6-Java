@@ -8,5 +8,6 @@ public class LessonOne {
         System.out.println("I am fine");
         System.out.println("New branch added");
         System.out.println("One more branch");
+        System.out.println("Branch 2");
     }
 }
