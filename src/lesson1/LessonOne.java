@@ -6,5 +6,6 @@ public class LessonOne {
         System.out.println("Good morning");
         System.out.println("How are you");
         System.out.println("I am fine");
+        System.out.println("New branch added");
     }
 }
