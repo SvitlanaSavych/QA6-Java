@@ -2,7 +2,7 @@ package lesson2;
 
 public class Primitives {
     public static void main(String[] args) {
-        /*//byte -128 till 127
+        //byte -128 till 127
         byte myByte = 12;
         myByte = 13;
         myByte = 14;
@@ -46,6 +46,6 @@ public class Primitives {
         System.out.println(12 % 5);
         System.out.println(-12 % 5);
         System.out.println(-12 % -5);
-        System.out.println(12 % -5);*/
+        System.out.println(12 % -5);
     }
 }
