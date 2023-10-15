@@ -2,7 +2,7 @@ package lesson2;
 
 public class Casting {
     public static void main(String[] args) {
-        /*byte myByte = 100;
+        byte myByte = 100;
         int myInt = myByte;
         System.out.println(myInt);
 
@@ -18,6 +18,6 @@ public class Casting {
         int myCharInteger = myChar;
         int myCharInteger2 = myChar2;
         System.out.println(myCharInteger);
-        System.out.println(myCharInteger2);*/
+        System.out.println(myCharInteger2);
     }
 }

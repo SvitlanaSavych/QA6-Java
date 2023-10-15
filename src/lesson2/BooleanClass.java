@@ -2,7 +2,7 @@ package lesson2;
 
 public class BooleanClass {
     public static void main(String[] args) {
-        /*boolean myBoolean = false;
+        boolean myBoolean = false;
         boolean myBoolean2 = true;
         System.out.println(myBoolean);
         System.out.println(myBoolean2);
@@ -40,9 +40,9 @@ public class BooleanClass {
         boolean example = 19 > 18 && 19 % 2 == 2;
         System.out.println(example);
 
-        System.out.println("Является ли число четным?wfqfq");
+        System.out.println("Является ли число четным?");
         int number = 34;
         System.out.println(number);
-        System.out.println(number % 2 == 0);*/
+        System.out.println(number % 2 == 0);
     }
 }
