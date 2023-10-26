@@ -1,6 +1,6 @@
-package lesson2.homework;
+package lesson2.homework1;
 
-public class Homework {
+public class Homework1 {
     //    4)
 //    Coздать две переменные типа int:
 //    int a = 7;

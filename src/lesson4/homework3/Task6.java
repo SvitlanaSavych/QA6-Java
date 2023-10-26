@@ -13,7 +13,7 @@ public class Task6 {
 //     о том что такой ОС не существует.
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What program are you interested in?");
+        System.out.println("What program are you interested in (IntelliJ IDEA, Git, Java)?");
         String program = scanner.nextLine();
         switch (program.toLowerCase()) {
             case ("intellij idea"):
@@ -28,7 +28,7 @@ public class Task6 {
             default:
                 System.out.println("There is no such program.");
         }
-        System.out.println("What OS are you using?");
+        System.out.println("What OS are you using (Linux, macOS, Windows)?");
         String os = scanner.nextLine();
         switch (os.toLowerCase()){
             case ("linux"):
