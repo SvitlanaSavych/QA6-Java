@@ -17,31 +17,63 @@ public class Task6 {
         String program = scanner.nextLine();
         switch (program.toLowerCase()) {
             case ("intellij idea"):
-                System.out.println("https://www.jetbrains.com/idea/download/?section=windows");
+                System.out.println("What OS do you use?");
+                String os = scanner.nextLine();
+                switch (os.toLowerCase()) {
+                    case ("linux"):
+                        System.out.println("https://www.jetbrains.com/help/idea/installation-guide.html#fff1f0ef");
+                        break;
+                    case ("macos"):
+                        System.out.println("https://www.jetbrains.com/help/idea/installation-guide.html#6afd82c0");
+                        break;
+                    case ("windows"):
+                        System.out.println("https://www.jetbrains.com/help/idea/installation-guide.html#3c126155");
+                        break;
+                    default:
+                        System.out.println("There is no such OS.");
+                }
                 break;
+
+
             case ("git"):
-                System.out.println("https://git-scm.com/downloads");
+                System.out.println("What OS do you use?");
+                String os1 = scanner.nextLine();
+                switch (os1.toLowerCase()) {
+                    case ("linux"):
+                        System.out.println("https://git-scm.com/download/linux");
+                        break;
+                    case ("macos"):
+                        System.out.println("https://git-scm.com/download/mac");
+                        break;
+                    case ("windows"):
+                        System.out.println("https://git-scm.com/download/win");
+                        break;
+                    default:
+                        System.out.println("There is no such OS.");
+                }
                 break;
+
+
             case ("java"):
-                System.out.println("https://www.oracle.com/cis/java/technologies/downloads/");
+                System.out.println("What OS do you use?");
+                String os2 = scanner.nextLine();
+                switch (os2.toLowerCase()) {
+                    case ("linux"):
+                        System.out.println("https://www.oracle.com/cis/java/technologies/downloads/#jdk21-linux");
+                        break;
+                    case ("macos"):
+                        System.out.println("https://www.oracle.com/cis/java/technologies/downloads/#jdk21-mac");
+                        break;
+                    case ("windows"):
+                        System.out.println("https://www.oracle.com/cis/java/technologies/downloads/#jdk21-windows");
+                        break;
+                    default:
+                        System.out.println("There is no such OS.");
+                }
                 break;
             default:
-                System.out.println("There is no such program.");
+                System.out.println("There is no such program");
         }
-        System.out.println("What OS are you using (Linux, macOS, Windows)?");
-        String os = scanner.nextLine();
-        switch (os.toLowerCase()){
-            case ("linux"):
-                System.out.println("https://www.linux.org/");
-                break;
-            case ("macos"):
-                System.out.println("https://www.teamviewer.com/ru-cis/download/macos/");
-                break;
-            case ("windows"):
-                System.out.println("https://www.microsoft.com/uk-ua/software-download/windows11");
-                break;
-            default:
-                System.out.println("There is no such OS.");
-        }
+
     }
 }

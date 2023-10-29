@@ -28,9 +28,7 @@ public class Task2 {
         System.out.println("Длина этого слова = " + word4.length());
         System.out.println("Слово 5 = " + word5);
         System.out.println("Длина этого слова = " + word5.length());
-        System.out.println(word1.length() > word2.length());
-        System.out.println(word1.length() > word3.length());
-        System.out.println(word1.length() > word4.length());
-        System.out.println(word1.length() > word5.length());
+        System.out.println(word1.length() > word2.length() && word1.length() > word3.length()
+                && word1.length() > word4.length() && word1.length() > word5.length());
     }
 }

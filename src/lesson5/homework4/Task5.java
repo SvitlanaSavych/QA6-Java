@@ -16,7 +16,7 @@ public class Task5 {
         for (int i = 0; i < newRandom.length; i++) {
             newRandom[i] = randomNumbers.nextInt(100);
         }
-//        System.out.println(Arrays.toString(newRandom));
+//      System.out.println(Arrays.toString(newRandom));
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Insert number:");
