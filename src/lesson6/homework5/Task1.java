@@ -18,21 +18,28 @@ public class Task1 {
 // • Якщо введене число менше загаданого, програма виводить на екран текст: Your number is too small. Please, try again..
 //   Якщо введене число більше за загадане, то програма виводить на екран текст: Your number is too big. Please, try again..
 // • Якщо введене число відповідає загаданому, то програма виводить текст: Congratulations, {name}!
-// • Завдання повинно бути виконане за допомогою масива (НЕ використовуйте інтерфейси List, Set, Map).
-
-        Random random = new Random();
-        int[] newRandom = new int[10];
-        for (int i = 0; i < newRandom.length; i++) {
-            newRandom[i] = random.nextInt(100);
-        }
-        System.out.println(Arrays.toString(newRandom));
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Let the game begin!");
-        System.out.println("Insert number:");
-        int number = scanner.nextInt();
-        int name;
-        for (int i = 0; i < newRandom.length; i++) {
+        System.out.println("Player, enter your name");
+        String nameOfPlayer = scanner.nextLine();
+
+        Random random = new Random();
+        int number = random.nextInt(100);
+//          System.out.println(number);
+        while (true) {
+            System.out.println("Enter the number from 0 till 100:");
+            int enterNumber = scanner.nextInt();
+
+            if (enterNumber < number) {
+                System.out.println("Your number is too small. Please, try again.");
+            } else if (enterNumber > number) {
+                System.out.println("Your number is too big. Please, try again.");
+            } else {
+                System.out.println("Congratulations, " + nameOfPlayer + "!");
+                break;
+            }
+
         }
     }
 }
