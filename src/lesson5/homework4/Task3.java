@@ -19,20 +19,31 @@ public class Task3 {
         int weightOfWarehouse = scanner.nextInt();
         int weight = 0;
         while (weight <= weightOfWarehouse) {
-            if (weight == weightOfWarehouse) {
+            if (weight == weightOfWarehouse){
                 System.out.println("Склад заполнен");
                 break;
             }
             System.out.println("Сколько металла вы хотите сдать на склад?");
             int metalsWeight = scanner.nextInt();
+
             if (weight + metalsWeight > weightOfWarehouse) {
-                System.out.println("Данная операция невозможна");
-                System.out.println("Склад может еще принять: "+ (weightOfWarehouse - weight));
+                System.out.println("Данная операция невозможна. Вы превысили вместимость склада.");
+                System.out.println("Склад может еще принять: " + (weightOfWarehouse - weight));
                 continue;
             }
             if (metalsWeight <= 5) {
                 System.out.println("Склад не может принять такой маленький вес");
                 System.out.println("Склад может еще принять: " + (weightOfWarehouse - weight));
+                continue;
+            }
+            if (metalsWeight == weightOfWarehouse-5) {
+                System.out.println("Данная операция невозможна");
+                System.out.println("Склад может еще принять: "+ (weightOfWarehouse - weight));
+                continue;
+            }
+            if (metalsWeight >= weightOfWarehouse-5) {
+                System.out.println("Данная операция невозможна");
+                System.out.println("Склад может еще принять: "+ (weightOfWarehouse - weight));
                 continue;
             }
             weight = weight + metalsWeight;
