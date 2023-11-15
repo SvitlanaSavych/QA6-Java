@@ -136,4 +136,11 @@ public class Converter {
         return stringValue;
     }
 
+
+
+
+//    public static void main(String[] args) {
+//        new Converter("Converter").convertToInt(false);
+//    }
+
 }
